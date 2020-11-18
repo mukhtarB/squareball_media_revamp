@@ -1,0 +1,41 @@
+HOME PAGE
+	Order
+		Hero
+		About - Welcome, Lorerm Ipsum
+		Services
+		Jumbotron + Newsletter
+		Gallery
+		Reviews / Testimonials
+		footer (Brief About, Locate Us, Latest Works (headlines?), Important Links,  )
+
+ABOUT PAGE
+	About
+	more about
+
+CONACT PAGE
+	Contact form
+	Address (Locate Us)
+	Google Map
+
+PORTFOLIO (Works)
+	YouTube Videos
+	Grid Layout
+	Big screen display
+	Locale Source Videos
+		OR
+	Grid Card Layout of Projects
+	Each Projects w Links to related Pictures and Videos
+
+SERVICES
+	Card Like list of servies
+
+404 ERROR PAGE
+
+
+************
+Mon - Oct 12.
+------------------------------------------------------------------
+Download Chrome Extension for 
+		- knowing fonts(what fonts)
+		- finding out color
+		- finding out letter-spacing and line-height
