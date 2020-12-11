@@ -19,6 +19,13 @@
 		
 		<div id ='container'>
 		
+			<!-- pre-loader -->
+			<div class = "loader">
+				<div class = "circle">
+					<div class = "circle-inner"></div>
+				</div>
+			</div>
+			
 			<!-- ===== Home Section ===== -->
 			<section id = "others-top">
 			
@@ -189,10 +196,10 @@
 							<h5>Quick Links</h5>
 							<ul>
 								<li><a href = "index.html" class = "d-block"> <span class = "x"> &#8594 </span> Home</a></li>
-								<!-- <li><a href = "about.html" class = "d-block"> <span class = "x"> &#8594 </span> About</a></li> -->
+								<li><a href = "about.html" class = "d-block"> <span class = "x"> &#8594 </span> About</a></li>
 								<li><a href = "services.html" class = "d-block"> <span class = "x"> &#8594 </span> Services</a></li>
 								<li><a href = "portfolio.html" class = "d-block"> <span class = "x"> &#8594 </span> Portfolio</a></li>
-								<li><a href = "contact.html" class = "d-block"> <span class = "x"> &#8594 </span> Book Us</a></li>
+								<!-- <li><a href = "contact.html" class = "d-block"> <span class = "x"> &#8594 </span> Book Us</a></li> -->
 								<li><a href = "#search" class = "d-block"> <span class = "x"> &#8594 </span> Search</a></li>
 							</ul>
 						</div>
@@ -252,11 +259,31 @@
 					<div id = "hamburger" class = "mb-auto"></div>
 					
 					<ul class = "d-flex flex-column align-items-center justify-content-center p-2">
-						<li><a href = "#"><i class="fa fa-instagram text-danger" aria-hidden="true"></i></a></li>
-						<li><a href = "#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-						<li><a href = "#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-						<li><a href = "#"><i class="fa fa-google text-danger" aria-hidden="true"></i></a></li>
-						<li><a href = "https://wa.me/+2348022226816"><i class="fa fa-whatsapp text-success" aria-hidden="true"></i></a></li>
+						<li>
+							<a href = "https://instagram.com/squareballmedia" target = "_blank">
+								<i class="fa fa-instagram text-danger" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a href = "https://twitter.com/squareballmedia" target = "_blank">
+								<i class="fa fa-twitter text-primary" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a href = "https://m.facebook.com/squareballmedia" target = "_blank">
+								<i class="fa fa-facebook text-primary" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a href = "mailto:info@squareballmedia">
+								<i class="fa fa-envelope text-secondary" aria-hidden="true" style="transform:scale(0.85)"></i>
+							</a>
+						</li>
+						<li>
+							<a href = "https://wa.me/+2348022226816">
+								<i class="fa fa-whatsapp text-success" aria-hidden="true"></i>
+							</a>
+						</li>
 					</ul>
 					
 					<li class = "mt-auto"><a href = "#logo" class = "bo btn text-primary"> &#8593 </a></li>
@@ -274,6 +301,13 @@
 		<script src = "js/bootstrap_js/bootstrap.min.js"></script>
 		
 		<script>
+			//preloader
+			$(window).on('load', function(){
+				$('.loader').fadeOut();
+			});
+		</script>
+		
+		<script>
 			// show / hide off canvas nav
 			$(document).ready(function(){
 				$('#hamburger').on('click', function(){
@@ -288,7 +322,7 @@
 			
 		</script>
 		<script>
-			//auto update on year copyright
+			//auto update on copyright year
 			var today = new Date();
 			var date = today.getFullYear();
 			

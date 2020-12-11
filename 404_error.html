@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang = "en-uk">
 	<head>
-		<title>Ooops, Broken link</title>
+		<title>Oops, Broken link</title>
 		<meta name = "description" content="" />
 		<meta name = "keyword" content=""/>
 		<meta name = "author" content="ABDULRAZAQ Mukhtar B."/>
@@ -18,6 +18,13 @@
 	
 	<body>
 		<div id ='container'>
+			
+			<!-- pre-loader -->
+			<div class = "loader">
+				<div class = "circle">
+					<div class = "circle-inner"></div>
+				</div>
+			</div>
 			
 			<section id = "e404">
 				<div class="container-fluid border-info text-white d-flex flex-column justify-content-center align-items-center" style ="height:100vh;">
@@ -40,7 +47,7 @@
 						
 						<!-- ===== Copyright tag ===== -->
 						<!-- <div class = "px-sm-2 pb-sm-2"> -->
-							<center>© <span>2020</span> SQUARE Ball Media . All rights reserved | Design by
+							<center>© <span id = "date"></span> SQUARE Ball Media . All rights reserved | Design by
 							<a href = "mailto:mukhtar.b017@gmail.com">ABDULRAZAQ Mukhtar B.</a></center>
 						<!-- </div> -->
 					</div>
@@ -53,11 +60,31 @@
 				<aside class = "d-flex flex-column align-items-center justify-content-center p-3">
 				
 					<ul class = "d-flex flex-column align-items-center justify-content-center p-2">
-						<li><a href = "#"><i class="fa fa-instagram text-danger" aria-hidden="true"></i></a></li>
-						<li><a href = "#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-						<li><a href = "#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-						<li><a href = "#"><i class="fa fa-google text-danger" aria-hidden="true"></i></a></li>
-						<li><a href = "#"><i class="fa fa-whatsapp text-success" aria-hidden="true"></i></a></li>
+						<li>
+							<a href = "https://instagram.com/squareballmedia" target = "_blank">
+								<i class="fa fa-instagram text-danger" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a href = "https://twitter.com/squareballmedia" target = "_blank">
+								<i class="fa fa-twitter text-primary" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a href = "https://m.facebook.com/squareballmedia" target = "_blank">
+								<i class="fa fa-facebook text-primary" aria-hidden="true" style="transform: translateX(0px)"></i>
+							</a>
+						</li>
+						<li>
+							<a href = "mailto:info@squareballmedia">
+								<i class="fa fa-envelope text-secondary" aria-hidden="true" style="transform:scale(0.85)"></i>
+							</a>
+						</li>
+						<li>
+							<a href = "https://wa.me/+2348022226816">
+								<i class="fa fa-whatsapp text-success" aria-hidden="true"></i>
+							</a>
+						</li>
 					</ul>
 					
 				</aside>
@@ -71,6 +98,21 @@
 		<script src= "js/jquery-3.5.1.min.js"></script>
 		<script src= "js/popper.js"></script>
 		<script src = "js/bootstrap_js/bootstrap.min.js"></script>
+		
+		<script>
+			//preloader
+			$(window).on('load', function(){
+				$('.loader').fadeOut();
+			});
+		</script>
+		
+		<script>
+			//auto update on year copyright
+			var today = new Date();
+			var date = today.getFullYear();
+			
+			document.getElementById('date').textContent = date;
+		</script>
 	</body>
 	
 </html>

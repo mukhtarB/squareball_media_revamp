@@ -19,6 +19,13 @@
 		
 		<div id ='container'>
 		
+			<!-- pre-loader -->
+			<div class = "loader">
+				<div class = "circle">
+					<div class = "circle-inner"></div>
+				</div>
+			</div>
+		
 			<!-- ===== Home Section ===== -->
 			<section id = "others-top">
 			
@@ -208,7 +215,7 @@
 					
 					<!-- ===== Copyright tag ===== -->
 					<div id = "copyright">
-						<center>© <span id = "date">2020</span> SQUARE Ball Media . All rights reserved | Design by
+						<center>© <span id = "date"></span> SQUARE Ball Media . All rights reserved | Design by
 						<a href = "mailto:mukhtar.b017@gmail.com">ABDULRAZAQ Mukhtar B.</a></center>
 					</div>
 					
@@ -222,63 +229,29 @@
 					<div id = "hamburger" class = "mb-auto"></div>
 					
 					<ul class = "d-flex flex-column align-items-center justify-content-center p-2">
-						<!-- <li> -->
-							<!-- <a href = "https://instagram.com/squareballmedia" target = "_blank"> -->
-								<!-- <i class="fa fa-instagram text-danger" aria-hidden="true"></i> -->
-							<!-- </a> -->
-						<!-- </li> -->
-						<!-- <li> -->
-							<!-- <a href = "https://twitter.com/squareballmedia" target = "_blank"> -->
-								<!-- <i class="fa fa-twitter" aria-hidden="true"></i> -->
-							<!-- </a> -->
-						<!-- </li> -->
-						<!-- <li> -->
-							<!-- <a href = "mailto:info@squareballmedia"  style="transform: scale(0.8)"> -->
-								<!-- <i class="fa fa-envelope text-secondary" aria-hidden="true"></i> -->
-							<!-- </a> -->
-						<!-- </li> -->
-						<!-- <li> -->
-							<!-- <a href = "https://m.facebook.com/squareballmedia" target = "_blank"> -->
-								<!-- <i class="fa fa-facebook text-primary" aria-hidden="true"></i> -->
-							<!-- </a> -->
-						<!-- </li> -->
-						<!-- <li> -->
-							<!-- <a href = "tel:+2348022226816"  style="transform: scale(0.9)"> -->
-								<!-- <i class="fa fa-phone text-success" aria-hidden="true"></i> -->
-							<!-- </a> -->
-						<!-- </li> -->
-						
 						<li>
 							<a href = "https://instagram.com/squareballmedia" target = "_blank">
 								<i class="fa fa-instagram text-danger" aria-hidden="true"></i>
-								<!-- <i class="fa fa-envelope  text-info" aria-hidden="true" style="transform: scale(0.85)"></i> -->
-								
 							</a>
 						</li>
 						<li>
 							<a href = "https://twitter.com/squareballmedia" target = "_blank">
-								<!-- <i class="fa fa-facebook" aria-hidden="true" style="transform: scaleX(1.2)"></i> -->
-								<i class="fa fa-twitter" aria-hidden="true"></i>
-								
-							</a>
-						</li>
-						<li>
-							<a href = "mailto:info@squareballmedia">
-								<!-- <i class="fa fa-instagram text-danger" aria-hidden="true"></i> -->
-								<i class="fa fa-envelope  text-info" aria-hidden="true" style="transform: scale(0.78)"></i>
+								<i class="fa fa-twitter text-primary" aria-hidden="true"></i>
 							</a>
 						</li>
 						<li>
 							<a href = "https://m.facebook.com/squareballmedia" target = "_blank">
-								<!-- <i class="fa fa-phone text-info" aria-hidden="true"></i> -->
-								<!-- <i class="fa fa-twitter" aria-hidden="true"></i> -->
-								<i class="fa fa-facebook" aria-hidden="true" style="transform: scaleX(1.2)"></i>
+								<i class="fa fa-facebook text-primary" aria-hidden="true" style="transform: translateX(0px)"></i>
 							</a>
 						</li>
 						<li>
-							<a href = "tel:+2348022226816">
-								<!-- <i class="fa fa-twitter" aria-hidden="true"></i> -->
-								<i class="fa fa-phone text-info" aria-hidden="true"></i>
+							<a href = "mailto:info@squareballmedia">
+								<i class="fa fa-envelope text-secondary" aria-hidden="true" style="transform:scale(0.83)"></i>
+							</a>
+						</li>
+						<li>
+							<a href = "https://wa.me/+2348022226816">
+								<i class="fa fa-whatsapp text-success" aria-hidden="true"></i>
 							</a>
 						</li>
 					</ul>
@@ -298,6 +271,13 @@
 		<script src = "js/bootstrap_js/bootstrap.min.js"></script>
 		
 		<script>
+			//preloader
+			$(window).on('load', function(){
+				$('.loader').fadeOut();
+			});
+		</script>
+		
+		<script>
 			// show / hide off canvas nav
 			$(document).ready(function(){
 				$('#hamburger').on('click', function(){
@@ -313,7 +293,7 @@
 		</script>
 		
 		<script>
-			//auto update on year copyright
+			//auto update on copyright year
 			var today = new Date();
 			var date = today.getFullYear();
 			
