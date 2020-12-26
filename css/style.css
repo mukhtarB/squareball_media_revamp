@@ -333,7 +333,7 @@ video{
 }
 /* ------- ABOUT PAGE -------- */
 #sec_1{
-	background-color:#f2f3f5;
+	background-color:#fff;
 }
 #sec_1 img{
 	border:2px solid orange;
@@ -427,6 +427,7 @@ video{
 	color:#fff;
 	background-color:rgba(0, 0, 0, 0.2);
 	padding:20px;
+	text-align:center;
 }
 .lead{
 	/* font-weight:500; */
