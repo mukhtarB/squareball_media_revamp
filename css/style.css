@@ -164,6 +164,7 @@ section{
 	height:100vh;
 	background-color:rgba(0, 0, 0, 0.75);
 	color:gray;
+	position:relative;
 }
 header{
 	width:100%;
@@ -306,10 +307,12 @@ header nav div:hover button, .off_canvas_nav ul #search_div:hover button{
 
 /* ------- video ------- */
 video{
-	width:100%;
-	height:100%;
-	position:absolute;
 	object-fit:cover;
+	position:absolute;
+	min-width:100%;
+	min-height:100%;
+	width:auto;
+	height:auto;
 	left:0px;
 	z-index:-100;
 	transition:all 1.2s linear;
